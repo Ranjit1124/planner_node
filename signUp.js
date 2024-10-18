@@ -12,7 +12,7 @@ app.use(cors());
 const server = createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:8080",'https://talkto-fawn.vercel.app'],
+    origin: ["https://planner-node.onrender.com",'https://talkto-fawn.vercel.app'],
     methods: ["GET", "POST"],
     allowedHeaders: ["my-custom-header"],
     credentials: true,
